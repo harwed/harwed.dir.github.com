@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>team21.ru| ALL categories</title>
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://team21.ru/css/style.css">
+</head>
+<body>
+    <header></header>
+    <nav class="clear"> 
+     <ul>
+         <li><a href="http://team21.ru/">main</a></li>
+         <li><a href="http://team21.ru/pgs/article/">article</a></li>
+         <li><a href="http://team21.ru/pgs/blog/">blog</a></li>
+         <li><a href="http://team21.ru/pgs/FAQ/">help</a></li>
+         <li><a href="http://team21.ru/pgs/information/">about us</a></li>
+         <li><a href="http://team21.ru/pgs/summary/">portfolio</a></li>
+         <li><a href="http://team21.ru/pgs/">all categories</a></li>
+         <li class="hide-show"><a>all menu</a>
+           <div class="menu"> 
+           
+           </div>
+         </li>
+     </ul>
+    </nav>
+    <main></main>
+    <menu></menu>
+    <footer></footer>
+<div class="null"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("header,main,footer,menu").click(function(){
+            $(".menu").hide();
+        });
+        $(".hide-show").click(function(){
+            $(".menu").show();
+        });
+    });
+</script>
+</body>
+</html>
